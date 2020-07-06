@@ -31,6 +31,7 @@
 		display: flex;
 		flex-direction: column;
 		margin: auto;
+		max-width: 35rem;
 		padding: 1rem;
 	}
 
@@ -39,7 +40,8 @@
 		border-spacing: 0;
 	}
 
-	#avatar {
+	#avatar,
+	#intro {
 		padding-bottom: 1.5rem;
 	}
 
@@ -49,12 +51,12 @@
 		display: block;
 	}
 
-	#links th,
-	#links td {
+	#contact th,
+	#contact td {
 		text-align: left;
 	}
 
-	#links th {
+	#contact th {
 		font-weight: bold;
 		padding-right: 1rem;
 	}
@@ -76,17 +78,18 @@
 
 	@media(min-width: 640px) {
 		main {
+			align-items: center;
 			flex-direction: row;
 		}
 
 		#avatar {
 			padding-bottom: unset;
 			padding-right: 1rem;
-			border-right: 1px solid #ddd;
 		}
 
-		#links {
+		#about {
 			padding-left: calc(1rem - 1px);
+			border-left: 1px solid #ddd;
 		}
 	}
 </style>
@@ -98,25 +101,30 @@
 			<circle cx="60%" cy="60%" r="25%" fill="none" stroke="#111" stroke-width="8%" />
 		</svg>
 	</section>
-	<section id="links">
-		<table>
-			<tr>
-				<th>Email</th>
-				<td><a href="mailto:femerson@staticagent.com">femerson@staticagent.com</a></td>
-			</tr>
-			<tr>
-				<th>LinkedIn</th>
-				<td><a href="https://www.linkedin.com/in/StaticAgent/">StaticAgent</a></td>
-			</tr>
-			<tr>
-				<th>sourcehut</th>
-				<td><a href="https://sr.ht/~staticagent">~staticagent</a></td>
-			</tr>
-			<tr>
-				<th>Github</th>
-				<td><a href="https://github.com/StaticAgent">StaticAgent</a></td>
-			</tr>
-		</table>
+	<section id="about">
+		<section id="intro">
+			<p>F. Emerson is a software engineer.</p>
+		</section>
+		<section id="contact">
+			<table>
+				<tr>
+					<th>Email</th>
+					<td><a href="mailto:femerson@staticagent.com">femerson@staticagent.com</a></td>
+				</tr>
+				<tr>
+					<th>LinkedIn</th>
+					<td><a href="https://www.linkedin.com/in/StaticAgent/">StaticAgent</a></td>
+				</tr>
+				<tr>
+					<th>sourcehut</th>
+					<td><a href="https://sr.ht/~staticagent">~staticagent</a></td>
+				</tr>
+				<tr>
+					<th>Github</th>
+					<td><a href="https://github.com/StaticAgent">StaticAgent</a></td>
+				</tr>
+			</table>
+		</section>
 	</section>
 </main>
 
