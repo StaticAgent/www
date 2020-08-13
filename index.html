@@ -55,23 +55,28 @@
 		margin-top: 1.25rem;
 	}
 
+	a:link {
+		background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(currentColor, currentColor);
+		background-position: 0% 93%, 100% 93%, 0% 93%;
+		background-repeat: no-repeat, no-repeat, repeat-x;
+		background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+		text-decoration: none;
+		text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+	}
+
 	a:link, a:visited {
-		color: #111;
-		text-decoration: underline;
-		text-decoration-color: #aaa;
+		color: inherit;
 	}
 
-	a:link:hover, a:visited:hover {
-		text-decoration-color: currentColor;
-	}
-
-	a:active {
-		color: currentColor;
-	}
-
-	#avatar > * {
+	#avatar > svg {
 		display: block;
 		margin-left: auto;
+	}
+
+	::selection {
+		text-shadow: none;
+		background: #0074d9;
+		color: #fff;
 	}
 </style>
 
